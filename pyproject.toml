@@ -20,4 +20,5 @@ dependencies = [
     "mkdocs-minify-plugin>=0.8.0",                      # 构建优化
     "pillow>=12.3.0",
     "cairosvg>=2.9.0",
+    "mkdocs-exporter>=6.2.0",
 ]

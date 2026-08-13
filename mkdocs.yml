@@ -85,9 +85,20 @@ plugins:
       draggable: true
   - excalidraw
   - heti
+  - exporter:
+      formats:
+        pdf:
+          aggregator:
+            enabled: true
+            output: superpod-whitepaper.pdf
+            covers: none
+          browser:
+            debug: true
+            timeout: 0
 
 hooks:
   - hooks/spi_registry.py
+  # - hooks/toc.py
 
 markdown_extensions:
   - admonition
@@ -292,5 +303,7 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/vega-embed@6
   - javascripts/charts.js
   - javascripts/evidence-tags.js
+  - javascripts/mkdocs-exporter.js
+  - https://cdn.jsdelivr.net/npm/mermaid@11.16.1/dist/mermaid.min.js
 
 copyright: © 2026 DeepLink 团队. 保留所有权利.
